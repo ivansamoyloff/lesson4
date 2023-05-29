@@ -1,0 +1,78 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  /* color: #000; */
+}
+
+h1{
+  color: green; 
+  font-size: 2em;
+}
+
+.red{
+  color: red;
+  font-size: 2em;
+}
+
+#hello{
+  color: blue; 
+  font-size: 2em;
+}
+
+.colorBlue{
+  color: blue; 
+  font-size: 2em;
+}
+
+h1#hello{
+  color: blueviolet;
+}
+
+div.one + h1.red{
+  color: yellow;
+}
+
+.two > h1#hello + h1.red{
+  color: aqua;
+}
+
+span, h1#hello{
+  /* background-color: orangered; */
+}
+
+div.one> div.two > span.red>div.two > h1.test_string{
+  font-size: 2em;
+}
+
+h1:hover{
+  color: red;
+}
+
+
+#hello:hover{
+  color: yellow;
+}
+
+#hello::first-letter{
+  color: black;
+}
+
+.class1{
+  color: blueviolet;
+  font-family: 'Roboto', 'Open-Sans', sans-serif;
+}
+
+/* 
+
+* - 0
+span <tagName> - 1
+.class :pseudoClass - 10
+span.class - 11
+#id - 100
+style atr - 1000
+!important - 10 000
+
+*/
